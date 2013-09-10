@@ -15,15 +15,20 @@
 00 00 00 00 00 00 00 00
 58 07 00 00 FE 00 00 00 # only change from ex01 is 58 07
 00 00 00 00 00 00 00 00
-16 16 00 00 00 03 00 06
+16 16 00 00 00 03
+
+00 06
+#  ^ length of string that follows
 
 4D 43 49 43 6D 64 # "MCICmd"
 
 01 04
+#  ^ length of string that follows
 
 57 61 76 65 # "Wave"
 
 02 04
+#  ^ length of string that follows
 
 54 65 78 74 # "Text"
 
