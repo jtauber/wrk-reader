@@ -21,6 +21,8 @@
 0C 00 00 04 02 3C 00 00                #
 00 01 00 07 00 06 00 00                #
 
+#        ^ number of notes following
+
 # NOTES? (7)
 
 90 30 40 3A 00 7C 00 00
@@ -43,6 +45,8 @@
 00 00 00 04 02 3C 00 00                #
 00 00 00 07 00 06 00 00                #
 
+#        ^ number of notes following
+
 # NOTES? (7)
 
 90 30 40 3A 00 7C 00 00
@@ -62,6 +66,8 @@
 
 18 00 00 04 02 3C 00 00                #
 00 02 00 07 00 06 00 00                #
+
+#        ^ number of notes following
 
 # NOTES? (7)
 
