@@ -48,9 +48,22 @@ What follows that is a 100-200 octet sequence I haven't explored much yet.
 
 ## Notes Block
 
-00 0E 04 00
-00 00 01 00 00 00 0C 04 00 00 00 01 00 04 00
+I'm not sure what indicates the exact start of a block of notes on a track,
+but at some point there is a word indicating the number of notes on a track:
 
-01 09 00 00 00
-01 00 00 00 01 0C
-00 00 04 02 3C 00 00 00 01 
+    00 07
+
+followed by an eight-byte sequence for each note:
+
+    00 06 00 00 90 30 40 3A
+    00 7C 00 00 90 28 40 46
+    00 EE 00 00 90 2D 40 98
+    00 A4 01 00 90 2D 40 24
+    00 D6 01 00 90 29 40 34
+    00 58 02 00 90 26 40 34
+    00 D0 02 00 90 2B 40 94
+
+The first four-bytes seem to be a little-endian double word indicating the
+time offset. The fifth byte is always `90` which likely corresponds to the
+MIDI command for `NOTE ON`. What follows is likey the pitch value, velocity
+and duration of the note.
