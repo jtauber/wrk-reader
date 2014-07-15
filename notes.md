@@ -4,7 +4,8 @@ All files begin with
 
 which is "CAKEWALK".
 
-Next there is a 110-octet sequence that is mostly identical. The common parts are:
+Next there is a 110-octet sequence that is mostly identical. The common parts
+are:
 
     1A 00 02 0A 02 00 00 00
     78 00 03 59 00 00 00 00
@@ -27,12 +28,12 @@ Next are three strings, each proceeded by an incrementing byte then the length:
     4D 43 49 43 6D 64
 
 "MCICmd"
-    
+
     01 04
     57 61 76 65
 
 "Wave"
-    
+
     02 04
     54 65 78 74
 

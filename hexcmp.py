@@ -4,7 +4,7 @@ import sys
 
 with open(sys.argv[1], "rb") as f:
     data = f.read()
-    
+
     offset = 0
     with open(sys.argv[2]) as g:
         for line in g:
