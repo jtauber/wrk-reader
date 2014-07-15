@@ -65,5 +65,5 @@ followed by an eight-byte sequence for each note:
 
 The first four-bytes seem to be a little-endian double word indicating the
 time offset. The fifth byte is always `90` which likely corresponds to the
-MIDI command for `NOTE ON`. What follows is likey the pitch value, velocity
+MIDI command for `NOTE ON`. What follows is likely the pitch value, velocity
 and duration of the note.
