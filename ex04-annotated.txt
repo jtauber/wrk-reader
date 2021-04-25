@@ -17,6 +17,9 @@
 00 00 00 00 00 00 00 00
 16 16 00 00 00 03
 
+# the changes above seem like little-endian words 0x0617 and 0x0614
+# which could be offsets?
+
 00 06
 #  ^ length of string that follows
 
@@ -197,6 +200,6 @@
 
 00 00 03 00 28 00 09 04 00
 00 00 03 00 58 02 13 06 00
-00 00 03 00 7F 00 50 00 FF 
+00 00 03 00 7F 00 50 00 FF
 
 # files ends in FF

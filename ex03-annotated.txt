@@ -17,6 +17,9 @@
 00 00 00 00 00 00 00 00
 16 16 00 00 00 03
 
+# the changes above seem like little-endian words 0x0753 and 0x0758
+# could they be offsets? the file isn't big enough
+
 00 06
 #  ^ length of string that follows
 
@@ -104,7 +107,7 @@
 00 00 01 00 00 00 0C 04 00
 00 00 01 00 04 00 # this is shorter that in other files
 
-01 09 00 00 00 
+01 09 00 00 00
 00 00 00 00 00 03
 00 00 04 02 84 01 00 00 00
 
@@ -165,4 +168,4 @@
 00 0E 04 00
 
 00 00 00 00 00 00 0C 04 00
-00 00 00 00 04 00 FF 
+00 00 00 00 04 00 FF
